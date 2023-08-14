@@ -19,7 +19,7 @@ __END__
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Vimwiki</title>
-    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="icon" href="data:,">
     <style>
 @media print {
   *,
