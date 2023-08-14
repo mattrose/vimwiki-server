@@ -10,4 +10,4 @@ Uses the default $HOME/vimwiki directory
 TODO List:
 * add Gemfile for bundler?
 * add command line parameter for non-default vimwiki dir
-* Prettify it with a layout of some sort?
+* Customizable layouts from http://markdowncss.github.io/?
