@@ -11,3 +11,4 @@ TODO List:
 * add Gemfile for bundler?
 * add command line parameter for non-default vimwiki dir
 * Customizable layouts from http://markdowncss.github.io/?
+* investigate rendering vimwiki formatted files as well as markdown
