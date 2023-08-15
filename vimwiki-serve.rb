@@ -4,7 +4,7 @@ require 'kramdown'
 set :views, "#{ENV['HOME']}/vimwiki/"
 
 get '/' do 
-  markdown :index
+  markdown :index, :layout_engine => :erb
 end
 
 get '/*' do |path|
