@@ -4,7 +4,7 @@ require 'kramdown'
 set :views, "#{ENV['HOME']}/vimwiki/"
 
 get '/' do 
-  markdown :index
+  markdown :index, :layout_engine => :erb
 end
 
 get '/*' do |path|
@@ -16,8 +16,6 @@ __END__
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Vimwiki</title>
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/markdowncss/splendor/css/splendor.min.css">
