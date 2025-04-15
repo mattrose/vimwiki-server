@@ -2,13 +2,18 @@ require 'sinatra'
 require 'kramdown'
 
 set :views, "#{ENV['HOME']}/vimwiki/"
+set :public_folder, "#{ENV['HOME']}/vimwiki/"
 
 get '/' do 
   redirect to('/index')
 end
 
 get '/*' do |path|
-  markdown path.to_sym, :layout_engine => :erb
+  begin
+     markdown path.to_sym, :layout_engine => :erb
+  rescue
+    send_file path
+  end
 end
 
 __END__
